@@ -7,8 +7,10 @@
 }
 
 body{
-    display: grid;
-    place-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     background-color: hsl(210, 46%, 95%);
 }
@@ -22,6 +24,7 @@ body{
     padding-block: 2rem;
     width: min(95%, 65rem);
     margin-inline: auto;
+    margin-bottom: 2rem;
 }
 
 .testimonials{
@@ -59,7 +62,7 @@ body{
 }
 
 .user{
-    display: flex;
+    display: flex; 
 }
 
 .user-img > img{
@@ -97,9 +100,9 @@ span{
 }
 
 .attribution {
-    grid-column: 1/5;
+    position: absolute;
     font-size: 16px;
-    padding: 1rem;
+    bottom: 1rem;
     text-align: center;
 }
 .attribution > a {
@@ -121,9 +124,6 @@ span{
         grid-column: 1/4;
     }
 
-    .attribution{
-        grid-column: 1/4;
-    }
 }
 
 @media screen and (min-width: 480px) and (max-width: 660px) {
@@ -156,10 +156,6 @@ span{
     .sub{
         font-size: 18px;
         line-height: 20px;
-    }
-
-    .attribution{
-        grid-column: 1/3;
     }
 }
 
@@ -197,9 +193,5 @@ span{
     .sub{
         font-size: 20px;
         line-height: 24px;
-    }
-
-    .attribution{
-        grid-column: 1/2;
     }
 }
